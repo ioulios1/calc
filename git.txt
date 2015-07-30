@@ -1,0 +1,164 @@
+user@machine2:~> cd /home/user/AndroidStudioProjects/Calculator
+user@machine2:~/AndroidStudioProjects/Calculator> git init
+Initialized empty Git repository in /home/user/AndroidStudioProjects/Calculator/.git/
+user@machine2:~/AndroidStudioProjects/Calculator> git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        .idea/
+        Calculator.iml
+        app/
+        build.gradle
+        gradle.properties
+        gradle/
+        gradlew
+        gradlew.bat
+        settings.gradle
+
+nothing added to commit but untracked files present (use "git add" to track)
+user@machine2:~/AndroidStudioProjects/Calculator> git add .
+user@machine2:~/AndroidStudioProjects/Calculator> git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   .idea/.name
+        new file:   .idea/compiler.xml
+        new file:   .idea/copyright/profiles_settings.xml
+        new file:   .idea/gradle.xml
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/vcs.xml
+        new file:   Calculator.iml
+        new file:   app/.gitignore
+        new file:   app/app.iml
+        new file:   app/build.gradle
+        new file:   app/proguard-rules.pro
+        new file:   app/src/androidTest/java/com/themis/calculator/ApplicationTest.java                                                                         
+        new file:   app/src/main/AndroidManifest.xml
+        new file:   app/src/main/java/com/themis/calculator/Act1.java
+        new file:   app/src/main/java/com/themis/calculator/Act2.java
+        new file:   app/src/main/java/com/themis/calculator/Act3.java
+        new file:   app/src/main/res/layout/activity_act1.xml
+        new file:   app/src/main/res/layout/activity_act2.xml
+        new file:   app/src/main/res/layout/activity_act3.xml
+        new file:   app/src/main/res/menu/menu_act1.xml
+        new file:   app/src/main/res/menu/menu_act2.xml
+        new file:   app/src/main/res/menu/menu_act3.xml
+        new file:   app/src/main/res/mipmap-hdpi/ic_launcher.png
+        new file:   app/src/main/res/mipmap-mdpi/ic_launcher.png
+        new file:   app/src/main/res/mipmap-xhdpi/ic_launcher.png
+        new file:   app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+        new file:   app/src/main/res/values-w820dp/dimens.xml
+        new file:   app/src/main/res/values/dimens.xml
+        new file:   app/src/main/res/values/strings.xml
+        new file:   app/src/main/res/values/styles.xml
+        new file:   build.gradle
+        new file:   gradle.properties
+        new file:   gradle/wrapper/gradle-wrapper.jar
+        new file:   gradle/wrapper/gradle-wrapper.properties
+        new file:   gradlew
+        new file:   gradlew.bat
+        new file:   settings.gradle
+
+user@machine2:~/AndroidStudioProjects/Calculator> git remote add calc https://github.com/ioulios1/calc.git
+user@machine2:~/AndroidStudioProjects/Calculator> git config -l
+user.email=ioulios.tsiko@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.calc.url=https://github.com/ioulios1/calc.git
+remote.calc.fetch=+refs/heads/*:refs/remotes/calc/*
+user@machine2:~/AndroidStudioProjects/Calculator> git commit -m "calculator"
+[master (root-commit) 4bff2bf] calculator
+ 39 files changed, 882 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .idea/.name
+ create mode 100644 .idea/compiler.xml
+ create mode 100644 .idea/copyright/profiles_settings.xml
+ create mode 100644 .idea/gradle.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 Calculator.iml
+ create mode 100644 app/.gitignore
+ create mode 100644 app/app.iml
+ create mode 100644 app/build.gradle
+ create mode 100644 app/proguard-rules.pro
+ create mode 100644 app/src/androidTest/java/com/themis/calculator/ApplicationTest.java
+ create mode 100644 app/src/main/AndroidManifest.xml
+ create mode 100644 app/src/main/java/com/themis/calculator/Act1.java
+ create mode 100644 app/src/main/java/com/themis/calculator/Act2.java
+ create mode 100644 app/src/main/java/com/themis/calculator/Act3.java
+ create mode 100644 app/src/main/res/layout/activity_act1.xml
+ create mode 100644 app/src/main/res/layout/activity_act2.xml
+ create mode 100644 app/src/main/res/layout/activity_act3.xml
+ create mode 100644 app/src/main/res/menu/menu_act1.xml
+ create mode 100644 app/src/main/res/menu/menu_act2.xml
+ create mode 100644 app/src/main/res/menu/menu_act3.xml
+ create mode 100644 app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 app/src/main/res/values-w820dp/dimens.xml
+ create mode 100644 app/src/main/res/values/dimens.xml
+ create mode 100644 app/src/main/res/values/strings.xml
+ create mode 100644 app/src/main/res/values/styles.xml
+ create mode 100644 build.gradle
+ create mode 100644 gradle.properties
+ create mode 100644 gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 gradle/wrapper/gradle-wrapper.properties
+ create mode 100644 gradlew
+ create mode 100755 gradlew.bat
+ create mode 100644 settings.gradle
+user@machine2:~/AndroidStudioProjects/Calculator> git push calc master
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7673)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7675)/kdeui (Wallet): The kwalletd service has been disabled 
+error: unable to read askpass response from '/usr/lib/ssh/ksshaskpass'
+Password for 'https://1234@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ioulios1/calc.git/'
+user@machine2:~/AndroidStudioProjects/Calculator> git push calc master
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7683)/kdeui (Wallet): The kwalletd service has been disabled 
+error: unable to read askpass response from '/usr/lib/ssh/ksshaskpass'
+Username for 'https://github.com': ioulios1
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+ksshaskpass(7685)/kdeui (Wallet): The kwalletd service has been disabled 
+Counting objects: 66, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (66/66), 75.24 KiB | 0 bytes/s, done.
+Total 66 (delta 3), reused 0 (delta 0)
+To https://github.com/ioulios1/calc.git
+ * [new branch]      master -> master
+user@machine2:~/AndroidStudioProjects/Calculator> 
+
